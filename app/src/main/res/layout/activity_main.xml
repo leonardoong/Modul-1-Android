@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.leonardo_1202154152_modul1.MainActivity">
+
+    <TextView
+        android:id="@+id/makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="MAKAN MALAM"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Menu Makan" />
+
+    <EditText
+        android:id="@+id/editPorsi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editMenu"
+        android:layout_alignStart="@+id/editMenu"
+        android:layout_below="@+id/editMenu"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Porsi" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPorsi"
+        android:layout_alignStart="@+id/editPorsi"
+        android:layout_below="@+id/editPorsi"
+        android:layout_marginTop="33dp"
+        android:text="EATBUS"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="eatbus"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignEnd="@+id/editPorsi"
+        android:layout_alignRight="@+id/editPorsi"
+        android:text="ABNORMAL"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="abnormal"/>
+</RelativeLayout>
